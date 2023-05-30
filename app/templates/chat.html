@@ -1,0 +1,51 @@
+{% extends "base.html" %} 
+{% block content %}
+<section class="container-fluid bg-info vh-100">
+  <div class="row">
+    <div class="col-12 chat-container mt-4 pt-4">
+      <div class="chat-header mt-2 bg-info d-flex justify-content-center align-items-center flex-wrap">
+        <h3 class="text-light pt-2 m-0">🎉 Feel free to chat in ChatBin 🎉</h3>
+        <a
+          class="btn btn-sm btn-outline-light mx-2 mt-2"
+          href="{{ url_for('user', username=current_user.username) }}"
+        >
+          Chatbin History
+        </a>
+      </div>
+      <div class="chat-body mt-4" id="chat-board">
+        {% for message in messages %}
+        <div class="message mb-3">
+          <div class="d-flex align-items-center mb-1">
+            <span class="othername me-2 text-start">{{ message.author.username }}:</span>
+            <span class="timestamp text-start">{{ message.timestamp }}</span>
+          </div>
+          <div class="content text-start">{{ message.content }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="chat-input pt-0 pb-10 py-sm-2 pb-lg-2 mb-8 bg-info col-9">
+    <div class="row">
+      <div class="col-9 col-sm-10">
+        <input
+          type="text"
+          name="message"
+          class="form-control message-input"
+          id="message-input"
+          placeholder="Type your message here..."
+        />
+      </div>
+      <div class="col-3 col-sm-2">
+        <button
+          type="button"
+          class="btn btn-primary submit-btn w-100"
+          onclick="sendMessage()"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

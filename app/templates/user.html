@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% block content %}
+<section class="bg-info text-light text-center text-sm-start p-5 p-lg-0 py-lg-5 vh-100">
+  <div class="container py-3">
+    <table class="table-light">
+      <tr class="table-light" valign="top">
+        <td class="mx-3" scope="col">
+          <img src="{{ user.avatar(128) }}" />
+        </td>
+        <td class="mx-3" scope="col">
+          <h1 class="text-warning mx-3">User: {{ user.username }}</h1>
+          {% if user.about_me %}
+          <p class="text-warning mx-3">About Me: {{ user.about_me }}</p>
+          {% endif %} 
+        </td>
+      </tr>
+    </table>
+    <a class="text-light text-center" href="{{ url_for('edit_profile') }}"> Edit profile</a>
+    
+    <!-- Chat History -->
+    <div id="chat-board" class="bg-info">
+      <!-- Table for displaying chat history -->
+      <table class="table text-light text-start">
+        <thead>
+          <tr>
+            <th>History</th>
+            <th>Username</th>
+            <th>Content</th>
+          </tr>
+        </thead>
+        <tbody id="chat-history-body">
+          <!-- Chat history rows will be dynamically added here -->
+        </tbody>
+      </table>
+      <!-- Back to Chatroom Button and Clean History Button -->
+      <div class="container d-flex justify-content-start">
+        <div class="row">
+          <div class="col-5">
+            <a href="{{ url_for('chat') }}">
+              <button class="btn btn-outline-light">
+                Back to Chatroom
+              </button>
+            </a>
+          </div>
+          <div class="col-5 px-3">
+            <button id="clean-history-btn" class="btn btn-secondary">
+              Clean All History
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

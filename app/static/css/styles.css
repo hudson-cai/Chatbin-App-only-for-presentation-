@@ -1,0 +1,224 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .hide-on-mobile {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+#login_submit_btn input,
+#register_submit_btn input,
+#submit_profile input {
+  padding: 8px 10px;
+  margin-top: 30px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dedfine the content styles of the Details Modal on the index page */
+#details-content {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+#details-content p {
+  margin-bottom: 20px;
+}
+
+#details-content .large {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#details-content .lead {
+  font-size: 18px;
+}
+
+#details-content .text-bold {
+  font-weight: bold;
+}
+
+/* Define the code and content styles in the How to Initialize Modal window on the index page */
+#markdown-content {
+  padding: 20px;
+  background-color: #080808;
+  color: rgb(209, 205, 205);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#markdown-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#markdown-content p {
+  margin-bottom: 10px;
+}
+
+#markdown-content a {
+  color: #007bff;
+}
+
+#markdown-content pre {
+  padding: 10px;
+  background-color: #282323;
+  color: rgba(202, 134, 134, 0.901);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+#markdown-content pre code {
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Chat container styles */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+/* Chat header styles */
+.chat-header h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chat body styles */
+.chat-body {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth; /* Optional, for smooth scrolling effect */
+}
+
+#chat-board {
+  height: 600px; /* This is the height of the chat board */
+  overflow-y: auto; /* This is to enable scrolling when the height is larger than the a set value */
+}
+
+/* Scrollbar styles */
+.chat-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+.chat-body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* This is the container for the chat message. It uses flex layout to position the elements. */
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+/* This is the chat message. It is styled to look like a chat bubble. */
+.message {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px; /* Add margin bottom to create vertical space between chat bubbles */
+}
+
+/* This is the username of the user. It is styled to be bold and to have a different color. */
+.username {
+  font-weight: bold;
+  color: #007bff;
+  margin-top: auto;
+}
+
+/* This is the username of the other user. It is styled to be bold and to have a different color. */
+.othername {
+  font-weight: bold;
+  color: #dc3545;
+  margin-top: auto;
+}
+
+/* This is the timestamp of the message. It is styled to have a smaller font size and a different color. */
+.timestamp {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: auto;
+}
+
+/* This is the content of the message. It is styled to have some padding. */
+.content {
+  margin-left: 10px;
+  padding: 5px 0;
+}
+
+/* Chat input styles */
+.chat-input {
+  max-width: 50%;
+  background-color: #0dcaf0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.inputbox {
+  max-width: 60%;
+}
+
+#message-input {
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .chat-input {
+    max-width: 80%;
+  }
+  .chat-body {
+    width: 80%;
+  }
+}

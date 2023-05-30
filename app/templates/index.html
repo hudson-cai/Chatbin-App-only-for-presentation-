@@ -1,0 +1,424 @@
+{% extends "base.html" %} {% block content %}
+<section
+  class="bg-info text-light text-center text-sm-start p-5 p-lg-0 py-lg-5"
+>
+  <div class="container">
+    <div class="d-sm-flex align-items-center justify-content-between">
+      <div>
+        <h1>Proj. of <span class="text-warning">Chatbin</span></h1>
+        <p class="lead my-4">
+          <span class="text-warning">Chatbin</span> <br />
+          Your personal haven for<br />
+          authentic emotional expression <br />
+          and meaningful connections with peers.<br />
+          <br />
+          <i>Start your EXPLORATION now :)</i>  <br />
+        </p>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary btn-md"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Details
+        </button>
+      </div>
+      <!-- Details Modal -->
+      <div
+        class="modal modal-md fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1
+                class="modal-title fs-5 text-secondary"
+                id="staticBackdropLabel"
+              >
+                What's <span class="text-warning">Chatbin</span> 🤔️
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-secondary" id="details-content">
+              <p>
+                <span class="large text-bold lead">In</span> a fast-paced world where self-expression is often stifled,
+                Chatbin stands out as a refuge for your deepest emotions. This
+                innovative app serves as your very own digital confidant, where
+                you can freely express yourself without fear of judgment or
+                consequence.
+              </p>
+              <br />
+              <p>
+                Chatbin goes beyond mere text-based conversations. It creates an
+                immersive and emotionally rich experience, allowing you to
+                communicate your feelings in a way that feels truly authentic.
+                Whether you're overwhelmed with joy, burdened by sorrow, or
+                simply need a listening ear, Chatbin is here to lend support and
+                understanding.
+              </p>
+              <br />
+              <p>
+                But Chatbin offers more than just a safe space for emotional
+                expression. It also connects you with like-minded individuals
+                who share your interests and passions. Through its intuitive
+                matching algorithm, Chatbin helps you find companions who
+                resonate with your experiences, allowing you to build meaningful
+                connections and forge lasting friendships.
+              </p>
+              <br />
+              <p>
+                With Chatbin, you have the freedom to be your true self and
+                connect with others on a deeper level. It's your sanctuary to
+                release, connect, and discover a community of individuals who
+                genuinely understand and appreciate you.
+              </p>
+              <br />
+              <p>
+                Join Chatbin today and unlock the power of immersive emotional
+                expression while forming connections that can truly enrich your
+                life. Your emotions deserve to be heard, and Chatbin provides
+                the perfect platform to make that happen.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cool 🎉
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- <div class="pt-10 text-warning">Sign In</div> -->
+        <form action="" method="post" novalidate>
+          <div class="my-4">{{ form.hidden_tag() }}</div>
+          <div class="mb-3">
+            <p class="text-bold">{{ form.username.label }}</p>
+            {{ form.username(size=32) }}<br />
+            <p id="userHelp" class="form-text">
+              We'll never share your info with anyone else.
+            </p>
+            {% for error in form.username.errors %}
+            <span class="text-warning">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <div class="mb-3">
+            <p class="text-bold">{{ form.password.label }}</p>
+            {{ form.password(size=32) }}<br />
+            {% for error in form.password.errors %}
+            <span class="text-warning">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <div class="mb-3">
+            {{ form.remember_me() }} {{ form.remember_me.label }}
+          </div>
+          <div class="mb-3" id="login_submit_btn">{{ form.submit() }}</div>
+        </form>
+        <p class="mb-3">
+          <span class="text-warning">New User? 🤔️ </span>
+          <a href="{{ url_for('register') }}"> Click to Register!</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Subscription Form -->
+<section class="bg-info text-light py-5">
+  <div class="container">
+    <div class="d-md-flex justify-content-between align-items-center">
+      <h5 class="mb-3 mb-md-0">Subscribe to Updates</h5>
+      <!--input-group is for bootstrap input group -->
+      <div class="input-group news-input">
+        <!-- A text input field for the user to enter their email -->
+        <input
+          id="mailForm"
+          type="text"
+          class="form-control"
+          placeholder="Enter your Email here"
+        />
+        <!-- A button for the user to submit the email -->
+        <button id="mailSubmit" class="btn btn-primary btn-md" type="button">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- // Subscription Form -->
+
+<section id="Boxes" class="p-5 pb-8 bg-info-subtle">
+  <div class="container pt-5">
+    <div class="row text-center g-4">
+      <!-- g-4 is for gap of 4 -->
+      <div class="col-md">
+        <!-- col-md is for medium screen -->
+        <div class="card bg-success text-light bg-opacity-75 border border-0">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-link"></i>
+              <!-- bi is for bootstrap icons -->
+            </div>
+            <h3 class="card-title mb-3">Features</h3>
+            <p class="card-text">
+              <span class="text-warning">Chatbin</span> features immersive
+              experience for emotional expression, as your personal confidant
+              and haven.
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal1"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="modal modal-lg fade" id="myModal1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  Features of <span class="text-warning">Chatbin</span>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="text-start" id="feature-content">
+                  <h3>Responsive Design</h3>
+                  <p>
+                    Chatbin is a responsive web application that can be used on different devices thanks to its bootstrap 5 framework and customised css styles.
+                  </p>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='features/responsive_design.png') }}" alt="pic">
+                  <br />
+                  <hr>
+                  <h3>Index Page (Login Page)</h3>
+                  <p>
+                    Index Page is the entry point of the application. It is the page where users can login to their accounts or register for a new account. In addition, four modals are added to the index page to provide users with more information about Chatbin.
+                  </p>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='features/index.png') }}" alt="pic">
+                  <br />
+                  <hr>
+                  <h3>Register Page</h3>
+                  <p>
+                    Register Page is where users can create a new account. It is a form that takes in the user's username, email and password. The password is hashed and stored in the database.
+                  </p>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='features/register.png') }}" alt="pic">
+                  <br />
+                  <hr>
+                  <h3>Profile and History Page</h3>
+                  <p>
+                    Profile Page is where users can view their profile information and update their profile picture. History Page is where users can view their chat history with Chatbin.
+                  </p>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='features/profile_and_history.png') }}" alt="pic">
+                  <br />
+                  <p>Users can edit the profile when clicking on the edit_your_profile link</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='features/edit_profile.png') }}" alt="pic">
+                  <br>
+                  <hr>
+                  <h3>Chat Page</h3>
+                  <p>
+                    Chat Page is where users can chat with Chatbin. User's messages and the conversation will be displayed on the chat page. The scroll bar will automatically scroll to the bottom of the page when the page is loaded or when a new message is sent.
+                  </p>
+                  <p>Additionally, customised Chatbot is used to respond to the user's negative messages by detecting key words.</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='features/chat.png') }}" alt="pic">
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card bg-info text-light border border-0">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-link-45deg"></i>
+            </div>
+            <h3 class="card-title mb-3">How to initialize</h3>
+            <p class="card-text">
+              The every step of setting up
+              <span class="text-warning">Chatbin</span> is convenient for your
+              own devices
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal2"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="modal modal-lg fade" id="myModal2">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  How to initialize the environment for
+                  <span class="text-warning">Chatbin</span>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="text-start" id="markdown-content">
+                  <p>
+                    1. <pre><code>python3 -m venv venv</code></pre>Create a virtual environment under
+                    the main directory (CITS5505_Project2). And then you can
+                    find a new folder called 'venv' under the main directory
+                  </p>
+                  <br />
+                  <p>
+                    2. <pre><code>source venv/bin/activate</code></pre>Activate the virtual
+                    environment
+                  </p>
+                  <br />
+                  <p>
+                    3. <pre><code>pip install -r requirements.txt</code></pre>This is to install all
+                    dependencies for this application
+                  </p>
+                  <br />
+                  <p>
+                    4. <pre><code>flask shell</code></pre>Enter python terminal in the virtual
+                    environment
+                  </p>
+                  <br />
+                  <p>
+                    5. <pre><code>flask db init</code></pre> Create the migration repository for
+                    chatbin
+                  </p>
+                  <br />
+                  <p>
+                    6. <pre><code>flask db migrate -m "users table"</code></pre>With the migration
+                    repository in place, it is time to create the first database
+                    migration, which will include the users table that maps to
+                    the User database model. The `flask db migrate` sub-command
+                    generates these automatic migrations.
+                  </p>
+                  <br />
+                  <p>
+                    7. <pre><code>flask db upgrade</code></pre>The flask db migrate command does not
+                    make any changes to the database, it just generates the
+                    migration script. To apply the changes to the database, the
+                    flask db upgrade command must be used
+                  </p>
+                  <br />
+                  <p>
+                    8. <pre><code>export FLASK_APP=chatbin.app</code></pre>Before running it, though,
+                    Flask needs to be told how to import it, by setting the
+                    FLASK_APP environment variable
+                  </p>
+                  <br />
+                  <p>9. Use Ctrl + C to exit the python terminal</p>
+                  <br />
+                  <p>
+                    10. <pre><code>flask run</code></pre>Now the app is running on 127.0.0.1/5000
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card bg-secondary text-light border border-0">
+          <div class="card-body text-center">
+            <div class="h1 mb-3">
+              <i class="bi bi-file-earmark-person"></i>
+            </div>
+            <h3 class="card-title mb-3">About us</h3>
+            <p class="card-text">
+              The project of <span class="text-warning">Chatbin</span> is
+              developed by team members: Luna and Bohan
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal3"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <div class="modal modal-lg fade" id="myModal3">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  About <span class="text-warning">us</span>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="text-start" id="about-content">
+                  <h3>Logo Design</h3>
+                  <p>
+                    <a href="https://looka.com/logo-maker/?gclid=CjwKCAjwvJyjBhApEiwAWz2nLW_OWMM106prm-kNE3snXwWkpkW-nP7hAD4aYgiyweR9cHK44FeU6BoCeesQAvD_BwE">Looka</a>, a free logo maker website, is used to create our logos. Additionally, we remove the background of the logos by ourselves.
+                  </p>
+                  <br>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='looka.png') }}" alt="pic">
+                  <br>
+                  <hr>
+                  <h3>Different Logos</h3>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='logo_large.png') }}" alt="logo_large">
+                  <br>
+                  <img class="img-fluid rounded mx-auto d-block" src="{{ url_for('static', filename='logo.png') }}" alt="logo">
+                  <br>
+                  <hr>
+                  <h3>Team Info 😆</h3>
+                  <p>We are a two-member team of CITS5505, and the team menbers are Luna and Bohan :)</p>                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- // Boxes -->
+<!-- logo -->
+<section id="lablogo" lass="mt-6 p-8 bg-light vh-100">
+  <div class="container-fluid">
+    <h2 class="text-info text-center pt-5">
+      <span class="text-warning">Chatbin</span> is the product of
+    </h2>
+    <img
+      src="{{ url_for('static', filename='logo_large.png') }}"
+      class="rounded mx-auto d-block pb-6"
+      alt="Lab Logo"
+    />
+  </div>
+  <!-- // logo -->
+</section>
+{% endblock %}

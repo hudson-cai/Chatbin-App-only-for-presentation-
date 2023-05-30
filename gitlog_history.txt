@@ -1,0 +1,517 @@
+commit 176bff5f06a7a9597b30b7954bad01e456d2ffd3
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Sun May 21 20:55:26 2023 +0800
+
+    Complete comments and update requirements.txt
+
+commit c863814b9cdf5ee7ed881ea168c55784557c6aac
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 21 20:47:56 2023 +0800
+
+    fixed socket 404 error
+
+commit e1aae24b902bd315485a6c75f41a92dbda9cb894
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 21 19:54:39 2023 +0800
+
+    fixed bug for link of edit profile
+
+commit a030090f8f424f8b1f7f6148e5f9363acd34601c
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 21 17:55:54 2023 +0800
+
+    removed extra section in chat.html
+
+commit 541af7031a70ea47b7afa2468139c98424287c1a
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 21 17:49:36 2023 +0800
+
+    chat.html modified
+
+commit f69c8f002bc14b597c95cc9fe3e8a034c9f9aa79
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 21 17:04:03 2023 +0800
+
+    more auto massages added
+
+commit db5292b59de8d703ceb9c4ac8be1fe287d28731b
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 21 16:43:26 2023 +0800
+
+    added more conforting message
+
+commit d6fa88a3ff71176bac6ca24f95a50b9ca0adbe70
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 21 16:15:26 2023 +0800
+
+    modify timezone
+
+commit f68668fcdb14472d9cca2a7c8d5e14b513de6040
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 18:57:49 2023 +0800
+
+    Update README.md
+
+commit 2ff6f071a2ce072c5e54a7bd5720445db1e716be
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 18:56:43 2023 +0800
+
+    Update README.md
+
+commit 7a207d48188a199abc71297053b926dc2dee4f0c
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 18:53:18 2023 +0800
+
+    Delete unit_test (not used).py
+
+commit 56b5c1cc973404c5f3d74ad082bb2e865ba90fe2
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 18:52:58 2023 +0800
+
+    Update README.md
+
+commit 83cf88ecb5a10b0da35072dd28bd115c690920d4
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 13:12:33 2023 +0800
+
+    Update README.md
+
+commit 779048c6b11e14d7d443af51b0b87256c1eca578
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 13:11:59 2023 +0800
+
+    Update README.md
+
+commit 981c617955001b15bd1995332d74c2fdff48608d
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 13:10:59 2023 +0800
+
+    Update README.md
+
+commit 23794e8ad70361334e97eeadec4327d3a80408df
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 13:08:24 2023 +0800
+
+    Update README.md
+
+commit 1d0d4229ab26afb34c23b95efebf56d0cfafa9ea
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 13:06:11 2023 +0800
+
+    Delete Screenshot 2023-05-20 at 12.03.56.png
+
+commit 0ca98b3c7a25eff8155ca5007a62195fcdab5170
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 13:00:05 2023 +0800
+
+    Update README.md
+
+commit 49e539a30e216acc2c892d0a60e8f268b3aebd92
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:59:01 2023 +0800
+
+    Update README.md
+
+commit c6bc87687f349b1eafe4f4f2dd496031cdfa9ea6
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:55:13 2023 +0800
+
+    Update README.md
+
+commit 7955667d229bae896470e5d8c11f3afdabe94eee
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:54:58 2023 +0800
+
+    Update README.md
+
+commit 669c63e69834c2520740f3eda311e6f78270aa7c
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:54:36 2023 +0800
+
+    Update README.md
+
+commit eb522caf53e7c88b5d68e7b75a1406707976649c
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:53:52 2023 +0800
+
+    Update README.md
+
+commit 83d75d9a0300db8a67ee9f1951714da26fcfadf6
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:51:40 2023 +0800
+
+    Update README.md
+
+commit 3ca238ce56434f67b2446ed5a4c1eed5fff7cc76
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:41:15 2023 +0800
+
+    Update README.md
+
+commit 35704bacbeaa76fdf0abb9978732918064946bbe
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Sat May 20 12:40:36 2023 +0800
+
+    Update README.md
+
+commit e56152383dfd9b7381022d2601307c1cd54b6a83
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Sat May 20 12:32:39 2023 +0800
+
+    Complete four modals on the index page and add corresponding css styles
+
+commit 9c4db7fa6787bbcaebec5cb8343e2eb7f56b9af0
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Fri May 19 21:01:38 2023 +0800
+
+    Fix all bugs of unit_test.py and modify system_test.pyy
+
+commit ad1e25ebba41a23c5f181012f9b4534df39405a1
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Fri May 19 19:29:16 2023 +0800
+
+    Create tests folder and modify unit_test.py
+
+commit a8ac014b50af0d10ff2869df2b3aae3668127782
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Fri May 19 17:35:11 2023 +0800
+
+    Create tests folder and modify unit_test.py
+
+commit 41047bceff7e973be7af49a57a1a9b4d09642116
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Fri May 19 17:29:29 2023 +0800
+
+    Create tests folder and modify unit_test.py
+
+commit f66205bc69af1a44ab9ff3fe76e2c01a23828731
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Fri May 19 14:43:42 2023 +0800
+
+    Fix frontend bugs
+
+commit 85a34b9d7fd46f90dce1c159f095ae81417faa1e
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Fri May 19 03:59:56 2023 +0800
+
+    auto reply added
+
+commit 54bc19c14e4f6d7e7038b09df60afe208e8a440e
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Fri May 19 02:08:34 2023 +0800
+
+    able to chat with chatbot but not shown in chat room
+
+commit 2efef3dbf47d3cd1d92f49a2a4e0c4ca1f7a5a84
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Fri May 19 01:54:01 2023 +0800
+
+    Create a ChatBot for auto-reply function
+
+commit 2cbca80e25d25b02dea0e6c417c99390be77f4b0
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Thu May 18 13:59:56 2023 +0800
+
+    Make UI updates
+
+commit ee98c4b0ef80925dd45dae45a0acde307283f431
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Thu May 18 12:57:44 2023 +0800
+
+    Make UI updates
+
+commit de815c75b8c9ff1e2822c1cbe85fc2c8a87d7309
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Thu May 18 12:44:58 2023 +0800
+
+    Make UI updates
+
+commit 728f756a90befcdee742bcdaef2500cad4aafdc5
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Wed May 17 16:06:44 2023 +0800
+
+    history diaply
+
+commit 85dd72faaf849a06a07fd995833b7417d0bdf18c
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Wed May 17 16:05:45 2023 +0800
+
+    clean history function
+
+commit 3a85ceab418958958a1eb8149ad140dd399d83ec
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Wed May 17 10:31:15 2023 +0800
+
+    add pytz to req.txt
+
+commit 4b9eac27862680693a086e1eb293f05ab2c6ada1
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Wed May 17 10:26:21 2023 +0800
+
+    timestamp fixed to perth time with format YYYY-MM-DD HH:MM:SS, 24hour
+
+commit 70c06db73ea541e991495a5fed30a2cc42c56eed
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Wed May 17 08:41:04 2023 +0800
+
+    bug fixed
+
+commit dec5d7e9463a67eca7a12c8313d25c860dc02503
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Wed May 17 08:29:23 2023 +0800
+
+    bug fixed
+
+commit 9526fb2d4207d035cca75f08111f3c65edd221da
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Wed May 17 00:29:05 2023 +0800
+
+    able to append new message
+
+commit c00e7ebdbe3dc7274cc993b2fbd7f78acbd56899
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Tue May 16 18:10:10 2023 +0800
+
+    Update README.md
+
+commit 9408d9ae6e8390acf5cc70f382ac0bbe52af2580
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Tue May 16 17:50:47 2023 +0800
+
+    Make updates for index.html and styles.css
+
+commit d180eab82936b0e1efac679ccee98e265d9aa549
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Tue May 16 17:18:33 2023 +0800
+
+    Make updates for index.html
+
+commit f02967d137a0821b961023d6ef3de5dcb32d1280
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Tue May 16 15:15:03 2023 +0800
+
+    Make updates for index.html
+
+commit 6a6a2c7baa075b600aea76a277b157799085e2d2
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Tue May 16 12:12:17 2023 +0800
+
+    Make updates for index.html
+
+commit 6691a99930e20c0b75d75896059f208de4bf5f5b
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Tue May 16 11:56:13 2023 +0800
+
+    Make updates for index.htmls
+
+commit 2a4beb4486f8ddab7b3a856fc07af0db46b15e87
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Mon May 15 17:02:04 2023 +0800
+
+    Make bootstrap5 responsive updates for chat.html and other updates for styles.css & chat.js
+
+commit 17acdc677315c1c4f3c3a633b06f00ad38cd3847
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Mon May 15 04:10:14 2023 +0800
+
+    unable to pop new message, re-login to update chat history
+
+commit e82fe8c68485a6d7f0e249d67daed27aa2ae95c8
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Mon May 15 03:48:25 2023 +0800
+
+    renamed: login.html -> index.html; index.html -> chat.html
+
+commit 727766e1dd850d7485d51df67cda6b69893c6fc5
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Mon May 15 02:49:10 2023 +0800
+
+    messaged seems to be able displayed but suddently disappeared
+
+commit 592164bdfd3b282dc8d6b9831fe2238e40b5c220
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Sun May 14 00:02:16 2023 +0800
+
+    Make initial bootstrap5 updates for templates and update logo and favicons
+
+commit 7e8d8924ebb443fe8c37361fcf5f9c80ffd462d7
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Sat May 13 23:41:42 2023 +0800
+
+    Make initial bootstrap5 updates for templates and update logo and favicons
+
+commit 4c969b69eae87b918ea0f219fee6f442be3a09d7
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Sat May 13 23:40:23 2023 +0800
+
+    Make initial bootstrap5 updates for templates and update logo and favicons
+
+commit 7b77b69584745df2c7eb3e3046601e7f31fc89aa
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Sat May 13 21:52:50 2023 +0800
+
+    Make initial bootstrap5 updates for templates and update logo and favicons
+
+commit c418f8265232b2f63962da3e1d7d5fb36e1b51a4
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sat May 13 10:28:30 2023 +0800
+
+    socket removed
+
+commit 34d7476e4d232e61f58e2ad874d1f894ba68fcd6
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Fri May 12 15:02:19 2023 +0800
+
+    able to send message
+
+commit ed1cc76c3786c0bd7dccc02b8aae576e69036438
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Fri May 12 00:40:29 2023 +0800
+
+    renamed Dustbin -> chatbin
+
+commit 0d77542a17b19345b6388489d461f30f413dfa28
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Wed May 10 16:20:05 2023 +0800
+
+    Update .gitignore
+
+commit 3ea11095f3e9bf42d290e7c6ebd498ca966be199
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Wed May 10 16:18:32 2023 +0800
+
+    Update README.md
+
+commit f6bb9cf051267768c8ac0b7b9284abad5338d297
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Wed May 10 16:15:26 2023 +0800
+
+    Update all py files and templates, referring to lab tutorial chapter 1-6
+
+commit 06ba588eb9c4e34c632c3b777979b3b250cf00bc
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Tue May 9 01:34:00 2023 +0800
+
+    Update README.md
+
+commit 1d82ea09256e4bff28757f3ecf9ca4c50bc961fc
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Tue May 9 01:33:13 2023 +0800
+
+    Update README.md
+
+commit b2b885dff633590f064baac69efbdb2644f98cda
+Author: Hudson_Cai <98653055+hudson-cai@users.noreply.github.com>
+Date:   Tue May 9 01:30:27 2023 +0800
+
+    Update README.md
+
+commit 0141fdc511a90c92be3bf2a4cdc2662b153d015d
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Tue May 9 00:58:58 2023 +0800
+
+    Add all required libraries in static folder, add all html files in templates folder and update class User & Message in database.py
+
+commit 7cd0cc9e8fac558e788c04079421c1b62cc4b31d
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 17:36:41 2023 +0800
+
+    key issue solved
+
+commit 80b4619494bf05f79ef2937957cddd53a45a65b6
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 17:19:24 2023 +0800
+
+    readme modified and database added
+
+commit 0ab65c6945ece4fdc8e4edac55562d25433d95f5
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 14:56:12 2023 +0800
+
+    bug solved
+
+commit 2f09f18f25d4cc116aebffb6ebaaf9e1b2d071f3
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 14:52:05 2023 +0800
+
+    404 error unsolved
+
+commit f8b3b37d45642fa4f1462a3118d0c166bfc8d01e
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 11:40:25 2023 +0800
+
+    bug removed
+
+commit e85990bfbfae7de0996785a5fef137779ed211bc
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 11:29:24 2023 +0800
+
+    index.page added
+
+commit aaed88366989c4a8bddaa01aee83ed86eb4baffe
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 11:23:56 2023 +0800
+
+    app command added
+
+commit b7b752bba67ce8b002162721318ef9789db7769d
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 11:16:51 2023 +0800
+
+    main app added
+
+commit b8069c0e914eafd76abb10370ca542adaa53704c
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 11:15:16 2023 +0800
+
+    routes added
+
+commit bdf0fe4203e0d263a5c15fa7279c207208f6aa40
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 11:14:19 2023 +0800
+
+    init added
+
+commit 8d11d4139157fe2a71b4ea62a8fc74d8f2751089
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Sun May 7 11:08:46 2023 +0800
+
+    app folder added
+
+commit 3445ebaaef5f26e6e2f332f60310f4f9e4ab8ee6
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Thu Apr 27 22:01:59 2023 +0800
+
+    Create flask env and install required packages
+
+commit b8a9522be9de3cae471d011585b1028cb45ca6e9
+Merge: 266843b 60a4c0d
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Thu Apr 27 21:58:49 2023 +0800
+
+    Merge branch 'main' of https://github.com/LunaZxxy/CITS5505_Project2
+    Merge to upload
+
+commit 266843bfd738342208ee39440a551a2c7f2350a5
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Thu Apr 27 21:48:24 2023 +0800
+
+    Create flask env and install required packages
+
+commit 60a4c0d33e02667d8c2917e0c2c86df50e0068b0
+Author: Luna <xinyue.luna.zhang@gmail.com>
+Date:   Thu Apr 27 14:09:47 2023 +0800
+
+    first attempt
+
+commit cac4c51673d1b14802ae32d3af22f4f8d231e775
+Author: Bohan_Cai <hudson_cai@outlook.com>
+Date:   Thu Apr 27 12:57:36 2023 +0800
+
+    Create flask env and install required packages
+
+commit 255e68dc2cf31aed807ca8224910b5883c0eb43b
+Author: LunaZxxy <106609958+LunaZxxy@users.noreply.github.com>
+Date:   Wed Apr 26 10:22:38 2023 +0800
+
+    Initial commit

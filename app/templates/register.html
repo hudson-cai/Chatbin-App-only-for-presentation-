@@ -1,0 +1,149 @@
+{% extends "base.html" %} {% block content %}
+<section
+  class="vh-100 bg-info text-light text-center text-sm-start p-5 p-lg-0 py-lg-5"
+>
+  <div class="container pt-4">
+    <div class="d-sm-flex align-items-center justify-content-between">
+      <div>
+        <h1>Proj. of <span class="text-warning">Chatbin</span></h1>
+        <p class="lead my-4">
+          <span class="text-warning">Chatbin</span> <br />
+          Your personal haven for<br />
+          authentic emotional expression <br />
+          and meaningful connections with peers.<br />
+          <br />
+          <i>Start your EXPLORATION now :)</i> <br />
+        </p>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary btn-md"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Details
+        </button>
+      </div>
+      <!-- Details Modal -->
+      <div
+        class="modal modal-md fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1
+                class="modal-title fs-5 text-secondary"
+                id="staticBackdropLabel"
+              >
+                What's <span class="text-warning">Chatbin</span> 🤔️
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-secondary">
+              <p>
+                <span class="text-bold lead">In</span> a fast-paced world where
+                self-expression is often stifled, Chatbin stands out as a refuge
+                for your deepest emotions. This innovative app serves as your
+                very own digital confidant, where you can freely express
+                yourself without fear of judgment or consequence.
+              </p>
+              <br />
+              <p>
+                Chatbin goes beyond mere text-based conversations. It creates an
+                immersive and emotionally rich experience, allowing you to
+                communicate your feelings in a way that feels truly authentic.
+                Whether you're overwhelmed with joy, burdened by sorrow, or
+                simply need a listening ear, Chatbin is here to lend support and
+                understanding.
+              </p>
+              <br />
+              <p>
+                But Chatbin offers more than just a safe space for emotional
+                expression. It also connects you with like-minded individuals
+                who share your interests and passions. Through its intuitive
+                matching algorithm, Chatbin helps you find companions who
+                resonate with your experiences, allowing you to build meaningful
+                connections and forge lasting friendships.
+              </p>
+              <br />
+              <p>
+                With Chatbin, you have the freedom to be your true self and
+                connect with others on a deeper level. It's your sanctuary to
+                release, connect, and discover a community of individuals who
+                genuinely understand and appreciate you.
+              </p>
+              <br />
+              <p>
+                Join Chatbin today and unlock the power of immersive emotional
+                expression while forming connections that can truly enrich your
+                life. Your emotions deserve to be heard, and Chatbin provides
+                the perfect platform to make that happen.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cool 🎉
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- <p class="text-warning">Register</p> -->
+        <form action="" method="post" novalidate>
+          <div class="my-4">{{ form.hidden_tag() }}</div>
+          <div class="mb-3">
+            <p>{{ form.username.label }}</p>
+            {{ form.username(size=32) }}<br />
+            {% for error in form.username.errors %}
+            <span style="color: red">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <div class="mb-3">
+            <p>{{ form.email.label }}</p>
+            {{ form.email(size=32) }}<br />
+            <p id="userHelp" class="form-text">
+              We'll never share your info with anyone else.
+            </p>
+            {% for error in form.email.errors %}
+            <span style="color: red">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <div class="mb-3">
+            <p>{{ form.password.label }}</p>
+            {{ form.password(size=32) }}<br />
+            {% for error in form.password.errors %}
+            <span style="color: red">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <div class="mb-3">
+            <p>{{ form.password2.label }}</p>
+            {{ form.password2(size=32) }}<br />
+            {% for error in form.password2.errors %}
+            <span style="color: red">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <div class="mb-3" id="register_submit_btn">{{ form.submit() }}</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container mt-5 mx-3"></div>
+
+{% endblock %}

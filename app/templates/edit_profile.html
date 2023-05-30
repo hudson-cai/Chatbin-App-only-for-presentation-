@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block content %}
+<section
+  class="vh-100 bg-info text-light text-center text-sm-start p-5 p-lg-0 py-lg-5"
+>
+  <div class="container py-3">
+    <p class="h2 lead">Edit Profile</p>
+    <form action="" method="post">
+      <div class="my-4">{{ form.hidden_tag() }}</div>
+      <div class="mb-3">
+        <p>{{ form.username.label }}</p>
+        {{ form.username(size=32) }}<br />
+        {% for error in form.username.errors %}
+        <span style="color: red">[{{ error }}]</span>
+        {% endfor %}
+      </div>
+      <div class="mb-3">
+        <p>{{ form.about_me.label }}</p>
+        {{ form.about_me(cols=40, rows=3) }}<br />
+        {% for error in form.about_me.errors %}
+        <span style="color: red">[{{ error }}]</span>
+        {% endfor %}
+      </div>
+      <div
+        id="submit_profile"
+        class="mb-3"
+        data-bs-toggle="modal"
+        data-bs-target="#notifyModal"
+      >
+        {{ form.submit() }}
+      </div>
+
+      
+    </form>
+  </div>
+  <div
+    class="modal fade"
+    id="notifyModal"
+    tabindex="-1"
+    aria-labelledby="notifyModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modified successfully</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          This Modal window will close automatically after 1.5 seconds.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
