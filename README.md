@@ -42,27 +42,15 @@ Additionally, customised Chatbot is used to respond to the user's negative messa
 
 ## Part 2: How to initialize this app?
 
-1. `python3 -m venv venv`
-   Create a virtual environment under the main directory (CITS5505_Project2).
-   And then you can find a new folder called 'venv' under the main directory.
-2. `source venv/bin/activate`
-   Activate the virtual environment.
-3. `pip install -r requirements.txt`
-   This is to install all dependencies for this application
-4. `flask shell`
-   Enter python terminal in the virtual environment
-5. `flask db init`
-   Create the migration repository for chatbin
-6. `flask db migrate -m "users table"`
-   With the migration repository in place, it is time to create the first database migration, which will include the users table that maps to the User database model.
-   The `flask db migrate` sub-command generates these automatic migrations.
-7. `flask db upgrade`
-   The flask db migrate command does not make any changes to the database, it just generates the migration script. To apply the changes to the database, the flask db upgrade command must be used.
-8. `export FLASK_APP=chatbin.py`
-   Before running it, though, Flask needs to be told how to import it, by setting the FLASK_APP environment variable.
-9. Use Ctrl + C to exit the python terminal
-10. `flask run`
-    Now the app is running on 127.0.0.1/5000
+
+1. `python3 -m venv venv` Create a virtual environment under the main directory (CITS5505_Project2). And then you can find a new folder called 'venv' under the main directory.
+2. `source venv/bin/activate` Activate the virtual environment.
+3. `pip install -r requirements.txt` This is to install all dependencies for this application
+4. `flask db init` Create the migration repository for chatbin
+5. `flask db migrate -m "users table"` With the migration repository in place, it is time to create the first database migration, which will include the users table that maps to the User database model. The `flask db migrate` sub-command generates these automatic migrations.
+6. `flask db upgrade` The flask db migrate command does not make any changes to the database, it just generates the migration script. To apply the changes to the database, the flask db upgrade command must be used.
+7. `export FLASK_APP=chatbin.py` Before running it, though, Flask needs to be told how to import it, by setting the FLASK_APP environment variable.
+8. `flask run` Now the app is running on 127.0.0.1/5000
 
 ## Part 3: How to test this app?
 
